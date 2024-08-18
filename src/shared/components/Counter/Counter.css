@@ -1,0 +1,33 @@
+.counter {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.counter__content {
+    border: 1px solid black;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #1E1E1E;
+    padding: 10px 20px;
+}
+
+
+
+.counter__digit {
+
+}
+
+.counter__digit::before {
+    content: "·";
+    padding: 0 10px;
+}
+
+.counter__digit:nth-child(1)::before {
+    display: none;
+}
