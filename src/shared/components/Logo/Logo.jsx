@@ -1,10 +1,8 @@
-import './Logo.css'
 
 function Logo(props) {
     return (
-        <div className="logo">
+        <div style={{fontSize: props.size || 24, fontWeight: props.weight || 800}}>
             {props.text}
-            {props.style}
         </div>
     )
 }

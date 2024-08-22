@@ -1,0 +1,38 @@
+.adv {
+    display: flex;
+    height: 100vh;
+    padding: var(--vertical-padding) 150px;
+    gap: 20rem;
+}
+
+.adv__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.adv__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.adv__img {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid salmon;
+    border-radius: 15px;
+}
+
+.adv__list {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    gap: 35px;
+}
+
+.adv__title {
+    font-weight: 600;
+    font-size: 40px;
+}
