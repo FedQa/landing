@@ -10,11 +10,11 @@ import Rating from "../../shared/components/Rating/Rating";
 
 function Footer() {
     return (
-        <div className="footer">
+        <section className="footer">
             <div className="footer__wrapper">
                 <div className="footer__left">
                     <div className="footer__title">
-                        <Logo text="eCards" size={34} />
+                        <Logo text="Мы предлагаем" size={34} />
                     </div>
 
                     <div className="footer__list">
@@ -57,7 +57,7 @@ function Footer() {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -7,13 +7,9 @@
 }
 
 .rating__points {
-    font-size: 120px;
-}
-
-.rating__stars {
-
+    font-size: 100px;
 }
 
 .rating__label {
-    font-size: 34px;
+    font-size: 26px;
 }

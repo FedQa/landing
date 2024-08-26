@@ -8,8 +8,6 @@
     font-family: "Nunito", sans-serif;
 }
 
-
-
 button {
     border: none;
     margin: 0;
@@ -32,10 +30,6 @@ button {
 
     /* Corrects inability to style clickable `input` types in iOS */
     -webkit-appearance: none;
-}
-
-h1 {
-
 }
 
 h2 {

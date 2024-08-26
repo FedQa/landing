@@ -8,7 +8,7 @@ import './Main.css';
 
 
 function Main() {
-    return (<div className="main">
+    return (<section className="main">
         <div className="main__wrapper">
             <header className="header">
                 <div className="header__title">
@@ -16,7 +16,7 @@ function Main() {
                 </div>
 
                 <div className="header__counter">
-                    <Counter text="100000" label="слов сгенерировано"/>
+                    <Counter text="3000" label="слов сгенерировано"/>
                 </div>
             </header>
 
@@ -56,7 +56,7 @@ function Main() {
                 </div>
             </div>
         </div>
-    </div>)
+    </section>)
 }
 
 export default Main;
