@@ -1,5 +1,6 @@
 import './Counter.css'
 import {useEffect, useState} from "react";
+import {AnimatedCounter} from "react-animated-counter";
 
 function Counter(props) {
     const [counter, setCounter] = useState(() =>
@@ -25,7 +26,15 @@ function Counter(props) {
         <div className="counter">
             <div className="counter__content">
                 {[...String(counter)].map((digit, index) => (
-                        <span key={index} className="counter__digit">{digit}</span>
+                        <AnimatedCounter
+                            key={index}
+                            className="counter__digit"
+                            value={digit}
+                            includeDecimals={false}
+                            fontSize={"60px"}
+                            incrementColor={"#FAC738"}
+                            decrementColor={"black"}
+                        />
                     )
                 )}
             </div>
@@ -33,6 +42,8 @@ function Counter(props) {
                 {props.label}
             </div>
         </div>
+
+
     )
 }
 

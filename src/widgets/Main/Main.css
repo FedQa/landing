@@ -8,6 +8,11 @@
     padding: var(--vertical-padding) 150px;
 }
 
+.wrapper__counter {
+    margin-top: 25%;
+    width: 55%;
+}
+
 .content {
     display: flex;
     width: 100%;

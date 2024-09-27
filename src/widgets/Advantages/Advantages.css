@@ -1,9 +1,8 @@
 
-.adv__wrapper {
+.advan__wrapper {
     height: calc(100vh - var(--vertical-padding) * 2);
     padding: var(--vertical-padding) 150px;
     display: flex;
-    gap: 10rem;
     align-items: center;
 }
 
@@ -11,12 +10,14 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 100%;
+    flex: 1;
+    justify-content: center;
 }
 
 .adv__right {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .adv__img {
@@ -40,6 +41,30 @@
 
 .adv__title {
     font-weight: 600;
+    font-size: 52px;
+    margin-bottom: 50px;
+}
+
+.adv__element {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 300ms ease all;
+    padding: 10px;
+}
+
+.adv__element:hover {
+    transform: scale(1.1);
+}
+
+.adv__element-selected {
+    border: 3px solid #FAC738;
+    border-radius: 25px;
+}
+
+.adv__element::before {
+    content: attr(indexBefore);
     font-size: 40px;
 }
 

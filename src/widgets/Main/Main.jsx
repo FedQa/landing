@@ -15,9 +15,6 @@ function Main() {
                     <Logo text="eCards" size={54}/>
                 </div>
 
-                <div className="header__counter">
-                    <Counter text="3000" label="слов сгенерировано"/>
-                </div>
             </header>
 
             <div className="content">
@@ -28,6 +25,10 @@ function Main() {
                     <div className="downloadButtons">
                         <DownloadButton type={"google"}/>
                         <DownloadButton type={"appStore"}/>
+                    </div>
+
+                    <div className="wrapper__counter">
+                        <Counter text="3000" label="слов сгенерировано"/>
                     </div>
                 </div>
 

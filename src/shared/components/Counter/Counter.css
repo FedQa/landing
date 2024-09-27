@@ -17,15 +17,18 @@
     padding: 10px 20px;
 }
 
-.counter__digit {
-
+.counter__label {
+    text-align: center;
 }
 
-.counter__digit::before {
+.ticker-view::before {
     content: "·";
     padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 60px;
 }
 
-.counter__digit:nth-child(1)::before {
+.ticker-view:nth-last-child(1)::before {
     display: none;
 }
