@@ -31,7 +31,7 @@ function Counter(props) {
                             className="counter__digit"
                             value={digit}
                             includeDecimals={false}
-                            fontSize={"60px"}
+                            fontSize={"30px"}
                             incrementColor={"#FAC738"}
                             decrementColor={"black"}
                         />

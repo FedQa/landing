@@ -5,26 +5,27 @@
 
 
 .main__wrapper {
-    padding: var(--vertical-padding) 150px;
+    padding: var(--vertical-padding) 10%;
 }
 
 .wrapper__counter {
-    margin-top: 25%;
-    width: 55%;
+    margin-top: 15%;
 }
 
 .content {
     display: flex;
     width: 100%;
-    height: calc(100vh - var(--header-height) - var(--vertical-padding) * 2 - var(--vertical-margin));
     margin-top: var(--vertical-margin);
+}
+
+.content__title {
+    font-size: 60px;
+    font-weight: 500;
 }
 
 .left {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding-bottom: 10%;
     width: 50%;
 }
 
@@ -42,6 +43,10 @@
 .header__counter {
     text-align: center;
 }
+
+.header__title {
+    font-size: 64px;
+}
 .img {
     height: 100%;
     display: flex;
@@ -52,7 +57,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    max-height: 1000px;
+    max-height: 800px;
     position: relative;
     justify-content: center;
     width: fit-content;
@@ -74,14 +79,14 @@
 }
 
 .downloadButtons {
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     gap: 20px;
 }
 
 #star__top {
-    top: 0;
-    left: 0;
+    top: -5%;
+    left: 15%;
 }
 
 #star__center {
@@ -94,6 +99,80 @@
     height: 7%;
     bottom: 40%;
     right: 5%;
+}
+
+@media (max-width: 770px) {
+    .img__wrapper {
+        max-height: 500px;
+    }
+
+    .content__title {
+        font-size: 34px;
+    }
+
+    .header__title {
+        font-size: 42px;
+    }
+
+}
+
+
+@media (min-width: 770px) and (max-width: 1000px) {
+    .img__wrapper {
+        max-height: 700px;
+    }
+
+    .content__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .ticker-view::before {
+        padding: 0;
+    }
+    .ticker-view > .ticker-column-container {
+        font-size: 30px;
+    }
+
+    .wrapper__counter {
+        margin-top: 5%;
+    }
+
+    .button {
+        min-width: 30%;
+    }
+
+    .content__title {
+        font-size: 42px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+
+    .img {
+        padding-top: 15%;
+        height: 40vh;
+    }
+
+}
+
+@media (max-width: 600px) and (max-height: 700px) {
+    .content__title {
+        font-size: 32px;
+    }
+
+    .header {
+        height: 10vh;
+    }
 }
 
 

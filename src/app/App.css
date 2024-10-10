@@ -31,8 +31,3 @@ button {
     /* Corrects inability to style clickable `input` types in iOS */
     -webkit-appearance: none;
 }
-
-h2 {
-    font-size: 60px;
-    font-weight: 500;
-}

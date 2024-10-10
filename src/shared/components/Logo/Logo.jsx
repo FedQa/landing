@@ -1,7 +1,7 @@
 
 function Logo(props) {
     return (
-        <div style={{fontSize: props.size || 24, fontWeight: props.weight || 800}}>
+        <div style={{fontSize: props.size, fontWeight: props.weight || 800}}>
             {props.text}
         </div>
     )

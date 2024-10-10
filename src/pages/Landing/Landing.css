@@ -1,12 +1,6 @@
-body {
-    margin: 0;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
 
 .landing_page {
-    padding: 0 100px;
+    /*padding: 0 100px;*/
     scroll-snap-type: y mandatory;
     height: 100vh;
     overflow-y: scroll;

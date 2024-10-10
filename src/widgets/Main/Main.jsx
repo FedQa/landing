@@ -12,23 +12,23 @@ function Main() {
         <div className="main__wrapper">
             <header className="header">
                 <div className="header__title">
-                    <Logo text="eCards" size={54}/>
+                    <Logo text="eCards" />
                 </div>
 
             </header>
 
             <div className="content">
                 <div className="left">
-                    <div className="title">
+                    <div className="content__title">
                         <h2>Осваивай новые знания легко и быстро</h2>
                     </div>
                     <div className="downloadButtons">
-                        <DownloadButton type={"google"}/>
-                        <DownloadButton type={"appStore"}/>
+                        <DownloadButton type={"google"} isDefault className="downloadButton" />
+                        <DownloadButton type={"appStore"} isDefault className="downloadButton" />
                     </div>
 
                     <div className="wrapper__counter">
-                        <Counter text="3000" label="слов сгенерировано"/>
+                        <Counter text="1" label="слов сгенерировано"/>
                     </div>
                 </div>
 

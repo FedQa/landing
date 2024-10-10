@@ -1,6 +1,7 @@
 import world from './../../shared/assets/world.svg'
 import check from './../../shared/assets/check.svg'
 import friends from './../../shared/assets/Friends.svg'
+import footerImg from './../../shared/assets/footer_img.svg'
 import Logo from "../../shared/components/Logo/Logo";
 import './Footer.css'
 import DownloadButton from "../../shared/components/DownloadButton/DownloadButton";
@@ -14,7 +15,7 @@ function Footer() {
             <div className="footer__wrapper">
                 <div className="footer__left">
                     <div className="footer__title">
-                        <Logo text="Мы предлагаем" size={34} />
+                        <Logo text="Мы предлагаем" />
                     </div>
 
                     <div className="footer__list">
@@ -46,16 +47,23 @@ function Footer() {
                 </div>
 
                 <div className="footer__right">
-                    <div className="footer__rating">
-                        <Rating />
+                    <div className="footer__right__img">
+                        <img src={footerImg} />
                     </div>
 
-                    <div className="footer__buttons">
-                        <DownloadButton type="google"/>
-                        <DownloadButton type="appStore"/>
+                    <div className="footer__right__wrapper">
+                        <div className="footer__rating">
+                            <Rating />
+                        </div>
+
+
+                        <div className="footer__buttons">
+                            <DownloadButton type="google" isDefault={false} />
+                            <DownloadButton type="appStore" isDefault={false} />
+                        </div>
                     </div>
+
                 </div>
-
             </div>
         </section>
     )

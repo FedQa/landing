@@ -5,7 +5,15 @@
 }
 
 .button:active {
-    transform: scale(0.85);
+    transform: scale(1.05);
+}
+
+.button:hover {
+    transform: scale(0.95);
+}
+
+.button:active:hover {
+    transform: scale(1.05);
 }
 
 .button img {
