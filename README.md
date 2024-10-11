@@ -1,2 +1,0 @@
-# landing for commerce project
-
