@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 15px;
     padding-left: 15px;
 }
@@ -24,7 +24,11 @@
 }
 
 .footer__left {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    padding: 0 200px;
 }
 
 .footer__element {
@@ -62,7 +66,7 @@
 .footer__right {
     position: relative;
     height: 100vh;
-    width: 50%;
+    width: 35vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,13 +87,25 @@
     left: 0;
     top: 0;
     height: 100vh;
-    width: 100%; /* Изображение должно занимать всю ширину контейнера */
+    width: 100%;
 }
 
 .footer__right__img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Сохраняем пропорции изображения */
+    object-fit: cover;
+}
+
+.rating__points {
+    text-shadow: 0 4px 4px #00000025;
+}
+
+.rating__stars {
+    text-shadow: 0 4px 4px #00000025;
+}
+
+.rating__label {
+    text-shadow: 0 4px 4px #00000025;
 }
 
 @media (max-width: 770px) {

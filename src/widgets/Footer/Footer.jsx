@@ -1,7 +1,7 @@
 import world from './../../shared/assets/world.svg'
 import check from './../../shared/assets/check.svg'
 import friends from './../../shared/assets/Friends.svg'
-import footerImg from './../../shared/assets/footer_img.svg'
+import footerImg from './../../shared/assets/footer_img.png'
 import Logo from "../../shared/components/Logo/Logo";
 import './Footer.css'
 import DownloadButton from "../../shared/components/DownloadButton/DownloadButton";
